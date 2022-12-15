@@ -1,4 +1,4 @@
-package Thread;
+package thread;
 
 import java.security.SecureRandom;
 import java.util.List;

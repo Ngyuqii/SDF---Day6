@@ -1,4 +1,4 @@
-package Network1;
+package network1;
 
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -13,7 +13,7 @@ public class ListServer {
     public static void main(String[] args) {
 
         //javac -sourcepath src -d classes src/network1/*.java
-        //java -cp classes Network1.ListServer 8080
+        //java -cp classes network1.ListServer 8080
         Integer port = Integer.parseInt(args[0]);
 
         try{

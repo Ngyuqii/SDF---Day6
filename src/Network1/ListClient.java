@@ -1,4 +1,4 @@
-package Network1;
+package network1;
 
 import java.io.IOException;
 import java.net.Socket;
@@ -13,7 +13,7 @@ public class ListClient {
     public static void main(String[] args) {
 
         //javac -sourcepath src -d classes src/network1/*.java
-        //java -cp classes Network1.ListClient 10 100 localhost 8080
+        //java -cp classes network1.ListClient 10 100 localhost 8080
         Integer numSize = Integer.parseInt(args[0]); //get the list size
         Integer numLimit = Integer.parseInt(args[1]); //get the number limit
         
