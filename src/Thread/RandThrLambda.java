@@ -17,7 +17,7 @@ public class RandThrLambda {
                 System.out.printf("[%d]: %d\n", j, rnd.nextInt(100));
             }
         };
-    
+
         for (Integer i = 0; i < 3; i++) {
             //thrpool.submit(run);
             thrpool.submit(() -> {

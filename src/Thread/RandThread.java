@@ -28,9 +28,8 @@ public class RandThread {
             try {
                 Thread.sleep(1 * 1000); // Sleep for 1 sec bfore printing out line 27
             }
-            catch (InterruptedException ex)
-            {
-
+            catch (InterruptedException e) {
+                System.out.print(e.getMessage());
             }
         }
     

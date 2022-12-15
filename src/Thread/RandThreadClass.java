@@ -24,19 +24,19 @@ public class RandThreadClass implements Runnable {
 
         Random rand = new SecureRandom();
 
-            for (Integer i = 0; i < 10; i++) {
-                Integer num = rand.nextInt(range);
-                numList.add(num);
-                System.out.printf("%d. %s > %d\n", i+1, name, num);
+        for (Integer i = 0; i < 10; i++) {
+            Integer num = rand.nextInt(range);
+            numList.add(num);
+            System.out.printf("%d. %s > %d\n", i+1, name, num);
                 
-                //Extra - Sleep for 2sec before continuing to run the for loop
-                try {
-                    Thread.sleep(2 * 1000);
-                }
-                catch (InterruptedException e) {
-                    System.out.println("Error executing sleep.\n");
-                }
+            //Extra - Sleep for 2sec before continuing to run the for loop
+            try {
+                Thread.sleep(2 * 1000);
             }
+            catch (InterruptedException e) {
+                System.out.println("Error executing sleep.\n");
+            }
+        }
 
     }
 
